@@ -10,6 +10,19 @@
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
     <h1>Hej med dig Kim</h1>
-    <input type="text">
+
+    <input type="text" id="myMarkdown" value"" onchange="myFunction()">
+
+    
+
+    <p id ="preview"></p>
+
+    <script>
+      function myFunction(){
+        var x = document.getElementById("myMarkdown").value;
+        document.getElementById("preview").innerHTML = "myMarkdown:"  + x;
+      }
+    </script>
+    
   </body>
 </html>
