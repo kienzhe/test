@@ -6,7 +6,7 @@ steps:
     if: ${{ always() }}
     env:
     on: push
-      DISCORD_WEBHOOK_URL: https://discordapp.com/api/webhooks/1077166308321402981/sBrBUOVVF-e3MmTNofWpIQNohxoj3OrodNJgNMtuPfnV0fj7-6BXqRKc0zcqpyql6G2U
+      DISCORD_WEBHOOK_URL: secrets.https://discordapp.com/api/webhooks/1077166308321402981/sBrBUOVVF-e3MmTNofWpIQNohxoj3OrodNJgNMtuPfnV0fj7-6BXqRKc0zcqpyql6G2U
       GITHUB_ACTOR: ${{ github.actor }}
       GITHUB_JOB_NAME: "Build and deploy"
       GITHUB_JOB_STATUS: ${{ job.status }}
